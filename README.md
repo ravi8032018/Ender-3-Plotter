@@ -60,6 +60,9 @@ The Marlin source itself comes from the [official Marlin](https://github.com/mar
 Use an Arduino Uno as an ISP programmer connected to the Melzi 6‑pin ISP header:
 
 - Arduino Uno runs the `ArduinoISP` sketch.
+  - Connect the Uno to your computer.
+  - Use the Arduino IDE and use the example sketch: `File → Examples →ArduinoISP -> ArduinoISP.ino`.
+  - Upload the sketch to the Uno.
 - Connect the Uno to the printer mainboard via the ISP (SPI) header.
 - Power the board from the Uno during programming (do **not** also power the printer from mains at the same time).
 
@@ -118,16 +121,18 @@ What’s working now:
 - LCD shows the custom plotter identity.
 - Axes home and move correctly.
 - Pen holder is mounted and plotting simple test patterns.
+- The bed and hotend temperatures are disabled.
+- Extruder assembly removed.
 
 Next steps:
 
 - Add more example G‑code files.
-- Refine motion settings for “handwritten” style plotting.
+- Refine motion settings for “handwritting” style plotting.
 - Document the full setup process with photos and diagrams.
 
 ---
 
 ## License
 
-This repository contains configuration and project files built on top of the Marlin firmware, which is released under the GPL license.  
+This repository contains configuration and project files built on top of the Marlin firmware, which is released under the **GPL** license.  
 Please refer to the Marlin project for licensing details, and respect the GPL when redistributing modified firmware.
